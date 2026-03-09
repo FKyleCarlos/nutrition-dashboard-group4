@@ -20,25 +20,45 @@
                 <div class="bg-white p-4 shadow-lg rounded-lg">
                     <h3 class="font-semibold">Bar Chart</h3>
                     <p class="text-sm text-gray-600">Average macronutrient content by diet type.</p>
-                    <canvas id="barChart" class="w-full h-48"></canvas>
+                    <img
+                    src="http://127.0.0.1:5500/backend/storage/charts/bar.png"
+                    id="barChart" 
+                    class="w-full h-48"
+                    alt="Bar Chart Placeholder"
+                    ></img>
                 </div>
 
                 <div class="bg-white p-4 shadow-lg rounded-lg">
                     <h3 class="font-semibold">Scatter Plot</h3>
                     <p class="text-sm text-gray-600">Nutrient relationships (e.g., protein vs carbs).</p>
-                    <canvas id="scatterPlot" class="w-full h-48"></canvas>
+                    <img 
+                    src="http://127.0.0.1:5500/backend/storage/charts/scatter.png"
+                    id="scatterPlot" 
+                    class="w-full h-48"
+                    alt="Scatter Placeholder"
+                    ></img>
                 </div>
 
                 <div class="bg-white p-4 shadow-lg rounded-lg">
                     <h3 class="font-semibold">Heatmap</h3>
                     <p class="text-sm text-gray-600">Nutrient correlations.</p>
-                    <div id="heatmap" class="w-full h-48"></div>
+                    <img
+                    src="http://127.0.0.1:5500/backend/storage/charts/heatmap.png"
+                    id="heatmap" 
+                    class="w-full h-48"
+                    alt="Scatter Placeholder"
+                    ></img>
                 </div>
 
                 <div class="bg-white p-4 shadow-lg rounded-lg">
                     <h3 class="font-semibold">Pie Chart</h3>
                     <p class="text-sm text-gray-600">Recipe distribution by diet type.</p>
-                    <canvas id="pieChart" class="w-full h-48"></canvas>
+                    <img 
+                    src="http://127.0.0.1:5500/backend/storage/charts/pie.png"
+                    id="pieChart" 
+                    class="w-full h-48"
+                    alt="Pie Chart Placeholder"
+                    ></img>
                 </div>
             </div>
         </section>
@@ -59,11 +79,11 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-4">API Data Interaction</h2>
             <div class="flex flex-wrap gap-4">
-                <button class="bg-blue-600 text-white py-2 px-4 rounded">Get Nutritional Insights</button>
-                <button class="bg-green-600 text-white py-2 px-4 rounded">Get Recipes</button>
-                <button class="bg-purple-600 text-white py-2 px-4 rounded">Get Clusters</button>
+                <button id="insightsBtn" class="bg-blue-600 text-white py-2 px-4 rounded">Get Nutritional Insights</button>
+                <button id="recipesBtn" class="bg-green-600 text-white py-2 px-4 rounded">Get Recipes</button>
+                <button id="clustersBtn"class="bg-purple-600 text-white py-2 px-4 rounded">Get Clusters</button>
             </div>
-        </section>
+        </section> 
 
         <section>
             <h2 class="text-2xl font-semibold mb-4">Pagination</h2>
@@ -79,6 +99,6 @@
     <footer class="bg-blue-600 p-4 text-white text-center mt-10">
         <p>&copy; 2025 Nutritional Insights. All Rights Reserved.</p>
     </footer>
-
+    <script src="app.js"></script>
 </body>
 </html>
