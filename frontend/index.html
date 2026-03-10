@@ -66,14 +66,14 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-4">Filters and Data Interaction</h2>
             <div class="flex flex-wrap gap-4">
-                <input type="text" placeholder="Search by Diet Type" class="p-2 border rounded w-full sm:w-auto">
-                <select class="p-2 border rounded w-full sm:w-auto">
+                <input id="dietInput" type="text" placeholder="Search by Diet Type" class="p-2 border rounded w-full sm:w-auto">
+                <select id="dietSelect" class="p-2 border rounded w-full sm:w-auto">
                     <option value="">All Diet Types</option>
-                    <option value="vegan">Dash</option>
+                    <option value="dash">Dash</option>
                     <option value="keto">Keto</option>
-                    <option value="keto">Mediterranean</option>
-                    <option value="keto">Paleo</option>
-                    <option value="keto">Vegan</option>
+                    <option value="mediterranean">Mediterranean</option>
+                    <option value="paleo">Paleo</option>
+                    <option value="vegan">Vegan</option>
                 </select>
             </div>
             <table id="insightsTable" class="min-w-full bg-white border border-gray-300 rounded-lg mt-5">
@@ -135,10 +135,9 @@
         <section>
             <h2 class="text-2xl font-semibold mb-4">Pagination</h2>
             <div class="flex justify-center gap-2 mt-4">
-                <button class="px-3 py-1 bg-gray-300 rounded hover:bg-gray-400">Previous</button>
-                <button class="px-3 py-1 bg-blue-600 text-white rounded">1</button>
-                <button class="px-3 py-1 bg-gray-300 rounded hover:bg-gray-400">2</button>
-                <button class="px-3 py-1 bg-gray-300 rounded hover:bg-gray-400">Next</button>
+                <button id="prevPageBtn" class="px-3 py-1 bg-gray-300 rounded hover:bg-gray-400">Previous</button>
+                <span id="pageInfo" class="font-medium">Page 1 of 1</span>
+                <button id="nextPageBtn" class="px-3 py-1 bg-gray-300 rounded hover:bg-gray-400">Next</button>
             </div>
         </section>
     </main>
