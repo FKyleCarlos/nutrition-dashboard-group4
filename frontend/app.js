@@ -40,10 +40,10 @@ async function getInsights(dietType = '') {
             tableBody.appendChild(row);
         });
 
-        document.getElementById("barChart").src = `http://127.0.0.1:5500/backend/storage/charts/bar.png?t=${Date.now()}`;
-        document.getElementById("scatterPlot").src = `http://127.0.0.1:5500/backend/storage/charts/scatter.png?t=${Date.now()}`;
-        document.getElementById("heatmap").src = `http://127.0.0.1:5500/backend/storage/charts/heatmap.png?t=${Date.now()}`;
-        document.getElementById("pieChart").src = `http://127.0.0.1:5500/backend/storage/charts/pie.png?t=${Date.now()}`;
+        document.getElementById("barChart").src = `${API_BASE}/charts/bar.png?t=${Date.now()}`;
+        document.getElementById("scatterPlot").src = `${API_BASE}/charts/scatter.png?t=${Date.now()}`;
+        document.getElementById("heatmap").src = `${API_BASE}/charts/heatmap.png?t=${Date.now()}`;
+        document.getElementById("pieChart").src = `${API_BASE}/charts/pie.png?t=${Date.now()}`;
     } catch (err) {
         console.error("Insights error:", err);
     }
